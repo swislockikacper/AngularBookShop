@@ -1,0 +1,4 @@
+<form (ngSubmit)="search()">
+  <input type="text" name="phrase" ngModel [(ngModel)]="phrase" #ctrl="ngModel" placeholder="Type book which You want to search" />
+  <input type="submit" value="Search"/>
+</form>

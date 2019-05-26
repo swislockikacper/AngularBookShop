@@ -2,14 +2,32 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
+import { AppComponent } from './components/app/app.component';
+import { SearchComponent } from './components/search/search.component';
+import { FormsModule } from '@angular/forms';
+import { BookComponent } from './components/book/book.component';
+import { BooksListComponent } from './components/books-list/books-list.component';
+import { PagingComponent } from './components/paging/paging.component';
+import { ProgressComponent } from './components/progress/progress.component';
+import { CartComponent } from './components/cart/cart.component';
+import { NavigationComponent } from './components/navigation/navigation.component';
+import { UserDataComponent } from './components/user-data/user-data.component'; 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SearchComponent,
+    BookComponent,
+    BooksListComponent,
+    PagingComponent,
+    ProgressComponent,
+    CartComponent,
+    NavigationComponent,
+    UserDataComponent
   ],
   imports: [
     BrowserModule,
+    FormsModule,     
     AppRoutingModule
   ],
   providers: [],
