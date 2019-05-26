@@ -11,7 +11,8 @@ import { PagingComponent } from './components/paging/paging.component';
 import { ProgressComponent } from './components/progress/progress.component';
 import { CartComponent } from './components/cart/cart.component';
 import { NavigationComponent } from './components/navigation/navigation.component';
-import { UserDataComponent } from './components/user-data/user-data.component'; 
+import { UserDataComponent } from './components/user-data/user-data.component';
+import { CartElementComponent } from './components/cart-element/cart-element.component'; 
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { UserDataComponent } from './components/user-data/user-data.component';
     ProgressComponent,
     CartComponent,
     NavigationComponent,
-    UserDataComponent
+    UserDataComponent,
+    CartElementComponent
   ],
   imports: [
     BrowserModule,
