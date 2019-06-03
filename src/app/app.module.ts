@@ -8,11 +8,11 @@ import { FormsModule } from '@angular/forms';
 import { BookComponent } from './components/book/book.component';
 import { BooksListComponent } from './components/books-list/books-list.component';
 import { PagingComponent } from './components/paging/paging.component';
-import { ProgressComponent } from './components/progress/progress.component';
+import { StatusComponent } from './components/status/status.component';
 import { CartComponent } from './components/cart/cart.component';
 import { NavigationComponent } from './components/navigation/navigation.component';
 import { UserDataComponent } from './components/user-data/user-data.component';
-import { CartElementComponent } from './components/cart-element/cart-element.component'; 
+import { CartElementComponent } from './components/cart-element/cart-element.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +21,7 @@ import { CartElementComponent } from './components/cart-element/cart-element.com
     BookComponent,
     BooksListComponent,
     PagingComponent,
-    ProgressComponent,
+    StatusComponent,
     CartComponent,
     NavigationComponent,
     UserDataComponent,
@@ -29,7 +29,7 @@ import { CartElementComponent } from './components/cart-element/cart-element.com
   ],
   imports: [
     BrowserModule,
-    FormsModule,     
+    FormsModule,
     AppRoutingModule
   ],
   providers: [],

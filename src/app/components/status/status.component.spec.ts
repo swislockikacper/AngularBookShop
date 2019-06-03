@@ -1,6 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ProgressComponent } from './progress.component';
+import { ProgressComponent } from './status.component';
 
 describe('ProgressComponent', () => {
   let component: ProgressComponent;

@@ -1,0 +1,44 @@
+section {
+  margin: 0 20%;
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+
+  div {
+    padding-top: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    width: 43%;
+    border-style: solid;
+    border-color: #000;
+    border-width: 0.1rem;
+
+    p {
+      margin: 0;
+    }
+
+    input {
+      margin-bottom: 1.5rem;
+      width: 50%;
+      height: 1.4rem;
+      border-color: #000;
+      border-width: 0.05rem;
+    }
+  }
+}
+
+section.navigation {
+  margin: 1.2rem auto;
+  width: 61%;
+  display: flex;
+  justify-content: space-between;
+
+  a {
+    text-decoration: none;
+    color: #000;
+    text-align: center;
+    width: 10rem;
+    font-size: 1.2rem;
+    border: 0.15rem solid #000;
+  }
+}

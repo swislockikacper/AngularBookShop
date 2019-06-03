@@ -2,10 +2,15 @@ form {
     input[type=text] {
         width: 15rem;
         height: 1.3rem;
+        border-color: #000;
+        border-width: 0.05rem;
     }
 
     input[type=submit] {
         width: 5rem;
-        height: 1.6rem;
+        height: 1.55rem;
+        background: #fff;
+        border-color: #000;
+        border-width: 0.05rem;
     }
 }
