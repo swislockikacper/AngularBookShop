@@ -1,0 +1,23 @@
+table {
+  margin: 2rem auto;
+  width: 60%;
+  border: 0.1rem solid #000;
+
+  thead {
+    tr {
+      font-weight: 900;
+
+      td.product {
+        padding-left: 1rem;
+        width: 60%;
+      }
+
+      td.count,
+      td.price {
+        width: 20%;
+        text-align: right;
+        padding-right: 1rem;
+      }
+    }
+  }
+}

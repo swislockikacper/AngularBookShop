@@ -1,0 +1,38 @@
+tr {
+  width: 100%;
+
+  td.book-data {
+    width: 60%;
+
+    div {
+      display: grid;
+
+      img {
+        padding-left: 1rem;
+        height: 4rem;
+        width: 3rem;
+        float: left;
+      }
+
+      div {
+        p.title {
+          font-weight: 800;
+          padding-left: 1rem;
+          margin-bottom: 0;
+        }
+
+        p.author {
+          padding-left: 1rem;
+          margin-top: 0;
+        }
+      }
+    }
+  }
+
+  td.count,
+  td.price {
+    width: 20%;
+    text-align: right;
+    padding-right: 1rem;
+  }
+}
