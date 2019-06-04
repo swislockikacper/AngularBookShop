@@ -1,0 +1,56 @@
+div.card {
+  flex: 1 0 30%;
+  width: 100%;
+  border: 0.1rem solid #000;
+  margin-bottom: 0.5rem;
+
+  p {
+    margin-left: 1rem;
+    margin-bottom: 0;
+
+    &.title {
+      font-weight: 700;
+      font-size: 1.2rem;
+    }
+
+    &.author {
+      margin-top: 0;
+    }
+  }
+
+  div {
+    display: flex;
+    flex-direction: row;
+    margin: 0.5rem;
+
+    img {
+      width: 8rem;
+      height: 12rem;
+    }
+
+    div {
+      display: flex;
+      flex-direction: column;
+
+      div.info {
+        p {
+          margin: 0;
+        }
+      }
+
+      div.actions {
+        margin-bottom: 0;
+
+        a {
+          text-decoration: none;
+          color: #000;
+          margin-top: 0.5rem;
+          text-align: center;
+          width: 100%;
+          font-size: 1rem;
+          border: 0.1rem solid #000;
+        }
+      }
+    }
+  }
+}

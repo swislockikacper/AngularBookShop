@@ -1,38 +1,49 @@
-tr {
+.card {
   width: 100%;
+  display: flex;
+  margin-bottom: 1rem;
 
-  td.book-data {
+  div {
     width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+
+    img {
+      padding-left: 1rem;
+      height: 4rem;
+      width: 3rem;
+    }
 
     div {
-      display: grid;
+      display: flex;
+      flex-direction: column;
 
-      img {
-        padding-left: 1rem;
-        height: 4rem;
-        width: 3rem;
-        float: left;
-      }
+      p {
+        margin-left: 0.5rem;
 
-      div {
-        p.title {
+        &.title {
+          font-size: 1.1rem;
           font-weight: 800;
-          padding-left: 1rem;
+          margin-top: 0;
           margin-bottom: 0;
         }
 
-        p.author {
-          padding-left: 1rem;
+        &.author {
           margin-top: 0;
+          font-size: 0.95rem;
         }
       }
     }
   }
 
-  td.count,
-  td.price {
+  p.data {
     width: 20%;
     text-align: right;
-    padding-right: 1rem;
+    padding-right: 2.2rem;
+
+    &.price {
+      font-weight: 800;
+      padding-right: 1.5rem;
+    }
   }
 }

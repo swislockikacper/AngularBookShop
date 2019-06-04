@@ -1,23 +1,46 @@
-table {
-  margin: 2rem auto;
-  width: 60%;
+section.title {
   border: 0.1rem solid #000;
+  width: 60%;
+  margin: 2rem auto;
 
-  thead {
-    tr {
+  div.headers {
+    display: flex;
+    justify-content: space-between;
+    
+    .bold {
       font-weight: 900;
-
-      td.product {
-        padding-left: 1rem;
-        width: 60%;
-      }
-
-      td.count,
-      td.price {
-        width: 20%;
-        text-align: right;
-        padding-right: 1rem;
-      }
     }
+    
+    p.product {
+      padding-left: 1rem;
+      width: 60%;
+    }
+    
+    p.count,
+    p.price {
+      width: 20%;
+      text-align: right;
+      padding-right: 2rem;
+    }
+  }
+
+  div.elements {
+    width: 100%;
+  }
+}
+
+section.navigation {
+  margin: 1.2rem auto;
+  width: 61%;
+  display: flex;
+  justify-content: space-between;
+
+  a {
+    text-decoration: none;
+    color: #000;
+    text-align: center;
+    width: 10rem;
+    font-size: 1.2rem;
+    border: 0.1rem solid #000;
   }
 }
