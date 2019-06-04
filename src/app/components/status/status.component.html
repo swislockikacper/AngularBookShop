@@ -1,7 +1,7 @@
 <section>
-  <div class="circle"></div>
+  <div class="circle" [ngStyle]="{'backgroundColor': step == '1' ? '#000' : '#fff'}"></div>
   <div class="rectangle"></div>
-  <div class="circle"></div>
+  <div class="circle" [ngStyle]="{'backgroundColor': step == '2' ? '#000' : '#fff'}"></div>
 </section>
 
 <div class="data">
