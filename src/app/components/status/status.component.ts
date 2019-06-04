@@ -8,10 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 export class StatusComponent implements OnInit {
   @Input() step: number;
 
-  constructor() { 
-  }
+  constructor() { }
 
-  ngOnInit() {
-  }
-
+  ngOnInit() { }
 }
