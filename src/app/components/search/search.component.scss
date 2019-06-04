@@ -1,21 +1,26 @@
-form {
-    input[type=text] {
-        width: 15rem;
-        padding: 0.2rem;
-        height: 1.5rem;
-        border-color: #000;
-        border-width: 0.05rem;
+section {
+  margin-top: 2rem;
+  text-align: center;
+
+  form {
+    input[type="text"] {
+      width: 15rem;
+      padding: 0.2rem;
+      height: 1.5rem;
+      border-color: #000;
+      border-width: 0.05rem;
     }
 
-    input[type=submit] {
-        width: 5rem;
-        height: 2rem;
-        background: #fff;
-        border-color: #000;
-        border-width: 0.05rem;
+    input[type="submit"] {
+      width: 5rem;
+      height: 2rem;
+      background: #fff;
+      border-color: #000;
+      border-width: 0.05rem;
     }
 
-    input[type=submit]:focus {
+    input[type="submit"]:focus {
       cursor: pointer;
+    }
   }
 }
