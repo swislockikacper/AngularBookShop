@@ -1,0 +1,78 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v2.2",
+    "signature": "79a6e32f5e31b7f741e8d04e4735b0f5796563a0"
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v2.2": {
+      "BookShopDataInitializer/1.0.0": {
+        "dependencies": {
+          "AWSSDK.DynamoDBv2": "3.3.101.20",
+          "AWSSDK.S3": "3.3.102.11"
+        },
+        "runtime": {
+          "BookShopDataInitializer.dll": {}
+        }
+      },
+      "AWSSDK.Core/3.3.102.2": {
+        "runtime": {
+          "lib/netstandard2.0/AWSSDK.Core.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.3.102.2"
+          }
+        }
+      },
+      "AWSSDK.DynamoDBv2/3.3.101.20": {
+        "dependencies": {
+          "AWSSDK.Core": "3.3.102.2"
+        },
+        "runtime": {
+          "lib/netstandard2.0/AWSSDK.DynamoDBv2.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.3.101.20"
+          }
+        }
+      },
+      "AWSSDK.S3/3.3.102.11": {
+        "dependencies": {
+          "AWSSDK.Core": "3.3.102.2"
+        },
+        "runtime": {
+          "lib/netstandard2.0/AWSSDK.S3.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.3.102.11"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "BookShopDataInitializer/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "AWSSDK.Core/3.3.102.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-xYmuG+SKb4RzvZ5hbtf1OQai8QwmAx+29FSjaEzb8pe8TT/js7J//YeyJzxY+MGGbXGvtXXlAAml72yGmWUkew==",
+      "path": "awssdk.core/3.3.102.2",
+      "hashPath": "awssdk.core.3.3.102.2.nupkg.sha512"
+    },
+    "AWSSDK.DynamoDBv2/3.3.101.20": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-FUiFLNEbDD37CVX7veQjRI/SolEv/cTkTRlwNNOydvOxhWXd3TD8mH8Fzch9vaZzctZRW8ZcjLch2H1zDLWK7g==",
+      "path": "awssdk.dynamodbv2/3.3.101.20",
+      "hashPath": "awssdk.dynamodbv2.3.3.101.20.nupkg.sha512"
+    },
+    "AWSSDK.S3/3.3.102.11": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-dFSqLAw8z27O71CoLe98faNzXyJmv+CkStJXwQlgkPZgy93Af2UP8DRBICVv/WOroU8bGm8OjqLpD6pP73oVjg==",
+      "path": "awssdk.s3/3.3.102.11",
+      "hashPath": "awssdk.s3.3.3.102.11.nupkg.sha512"
+    }
+  }
+}

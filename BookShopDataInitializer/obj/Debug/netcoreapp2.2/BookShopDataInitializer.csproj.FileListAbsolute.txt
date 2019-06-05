@@ -1,0 +1,11 @@
+C:\Users\kswislocki\Desktop\Projekty\AngularShop\BookShopDataInitializer\bin\Debug\netcoreapp2.2\BookShopDataInitializer.deps.json
+C:\Users\kswislocki\Desktop\Projekty\AngularShop\BookShopDataInitializer\bin\Debug\netcoreapp2.2\BookShopDataInitializer.runtimeconfig.json
+C:\Users\kswislocki\Desktop\Projekty\AngularShop\BookShopDataInitializer\bin\Debug\netcoreapp2.2\BookShopDataInitializer.runtimeconfig.dev.json
+c:\Users\kswislocki\Desktop\Projekty\AngularShop\BookShopDataInitializer\bin\Debug\netcoreapp2.2\BookShopDataInitializer.dll
+c:\Users\kswislocki\Desktop\Projekty\AngularShop\BookShopDataInitializer\bin\Debug\netcoreapp2.2\BookShopDataInitializer.pdb
+c:\Users\kswislocki\Desktop\Projekty\AngularShop\BookShopDataInitializer\obj\Debug\netcoreapp2.2\BookShopDataInitializer.csprojAssemblyReference.cache
+c:\Users\kswislocki\Desktop\Projekty\AngularShop\BookShopDataInitializer\obj\Debug\netcoreapp2.2\BookShopDataInitializer.csproj.CoreCompileInputs.cache
+c:\Users\kswislocki\Desktop\Projekty\AngularShop\BookShopDataInitializer\obj\Debug\netcoreapp2.2\BookShopDataInitializer.AssemblyInfoInputs.cache
+c:\Users\kswislocki\Desktop\Projekty\AngularShop\BookShopDataInitializer\obj\Debug\netcoreapp2.2\BookShopDataInitializer.AssemblyInfo.cs
+c:\Users\kswislocki\Desktop\Projekty\AngularShop\BookShopDataInitializer\obj\Debug\netcoreapp2.2\BookShopDataInitializer.dll
+c:\Users\kswislocki\Desktop\Projekty\AngularShop\BookShopDataInitializer\obj\Debug\netcoreapp2.2\BookShopDataInitializer.pdb

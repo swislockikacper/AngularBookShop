@@ -1,0 +1,14 @@
+C:\Users\kswislocki\Desktop\Projekty\AngularShop\BookShopBackend\bin\Debug\netcoreapp2.2\BookShopBackend.deps.json
+C:\Users\kswislocki\Desktop\Projekty\AngularShop\BookShopBackend\bin\Debug\netcoreapp2.2\BookShopBackend.runtimeconfig.json
+C:\Users\kswislocki\Desktop\Projekty\AngularShop\BookShopBackend\bin\Debug\netcoreapp2.2\BookShopBackend.runtimeconfig.dev.json
+c:\Users\kswislocki\Desktop\Projekty\AngularShop\BookShopBackend\bin\Debug\netcoreapp2.2\BookShopBackend.dll
+c:\Users\kswislocki\Desktop\Projekty\AngularShop\BookShopBackend\bin\Debug\netcoreapp2.2\BookShopBackend.pdb
+c:\Users\kswislocki\Desktop\Projekty\AngularShop\BookShopBackend\obj\Debug\netcoreapp2.2\BookShopBackend.csprojAssemblyReference.cache
+c:\Users\kswislocki\Desktop\Projekty\AngularShop\BookShopBackend\obj\Debug\netcoreapp2.2\BookShopBackend.csproj.CoreCompileInputs.cache
+c:\Users\kswislocki\Desktop\Projekty\AngularShop\BookShopBackend\obj\Debug\netcoreapp2.2\BookShopBackend.RazorAssemblyInfo.cache
+c:\Users\kswislocki\Desktop\Projekty\AngularShop\BookShopBackend\obj\Debug\netcoreapp2.2\BookShopBackend.RazorAssemblyInfo.cs
+c:\Users\kswislocki\Desktop\Projekty\AngularShop\BookShopBackend\obj\Debug\netcoreapp2.2\BookShopBackend.AssemblyInfoInputs.cache
+c:\Users\kswislocki\Desktop\Projekty\AngularShop\BookShopBackend\obj\Debug\netcoreapp2.2\BookShopBackend.AssemblyInfo.cs
+c:\Users\kswislocki\Desktop\Projekty\AngularShop\BookShopBackend\obj\Debug\netcoreapp2.2\BookShopBackend.RazorTargetAssemblyInfo.cache
+c:\Users\kswislocki\Desktop\Projekty\AngularShop\BookShopBackend\obj\Debug\netcoreapp2.2\BookShopBackend.dll
+c:\Users\kswislocki\Desktop\Projekty\AngularShop\BookShopBackend\obj\Debug\netcoreapp2.2\BookShopBackend.pdb
