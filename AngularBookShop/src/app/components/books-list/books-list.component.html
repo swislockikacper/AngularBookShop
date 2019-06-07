@@ -1,11 +1,3 @@
 <section>
-  <book></book>
-  <book></book>
-  <book></book>
-  <book></book>
-  <book></book>
-  <book></book>
-  <book></book>
-  <book></book>
-  <book></book>
+  <book *ngFor="let book of getBooks(1)" [book]="book"></book>
 </section>

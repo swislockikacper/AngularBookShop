@@ -13,6 +13,7 @@ import { UserDataComponent } from './components/user-data/user-data.component';
 import { CartElementComponent } from './components/cart-element/cart-element.component';
 import { NavigationComponent } from './components/navigation/navigation.component';
 import { HomeComponent } from './components/home/home.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { HomeComponent } from './components/home/home.component';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     FormsModule,
     AppRoutingModule
   ],

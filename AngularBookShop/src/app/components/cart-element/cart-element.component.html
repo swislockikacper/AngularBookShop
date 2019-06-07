@@ -1,14 +1,18 @@
 <div class="card">
   <div>
-    <img
-      src="https://media.merlin.pl/media/300x452/000/003/804/56ba61f951b74.jpg"
-    />
+    <img src="data:image/gif;base64,{{ cartElement.photo }}" />
     <div>
-      <p class="title">Potop</p>
-      <p class="author">Henryk Sienkiewicz</p>
+      <p class="title">{{ cartElement.title }}</p>
+      <p class="author">{{ cartElement.author }}</p>
     </div>
   </div>
 
-  <p class="count data">1</p>
-  <p class="price data">25,55 zł</p>
+  <p class="count data">{{ cartElement.quantity }}</p>
+
+  <div class="buttons">
+    <button (click)="addOneMore()">+</button>
+    <button (click)="deleteOne()">-</button>
+  </div>
+
+  <p class="price data">{{ cartElement.price }} zł</p>
 </div>

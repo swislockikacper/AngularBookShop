@@ -1,11 +1,9 @@
 <div class="card">
-  <p class="title">Potop</p>
-  <p class="author">Henryk Sienkiewicz</p>
+  <p class="title">{{ book.title }}</p>
+  <p class="author">{{ book.author }}</p>
 
   <div>
-    <img
-      src="https://media.merlin.pl/media/300x452/000/003/804/56ba61f951b74.jpg"
-    />
+    <img src="data:image/gif;base64,{{ book.photo }}" />
 
     <div>
       <div class="info">
@@ -13,7 +11,7 @@
           Number of pages:
         </p>
         <p>
-          500
+          {{ book.numberOfPages }}
         </p>
       </div>
 
@@ -21,14 +19,12 @@
         <p>
           Price:
         </p>
-        <p>
-          25,55 zł
-        </p>
+        <p>{{ book.price }} zł</p>
       </div>
 
       <div class="actions">
-        <a href="https://www.wp.pl">Order</a>
-        <a href="https://www.wp.pl">Add to cart</a>
+        <a href="#" (click)="goToOrder(book.id)">Order</a>
+        <a href="#" (click)="addToCart(book.id)">Add to cart</a>
       </div>
     </div>
   </div>

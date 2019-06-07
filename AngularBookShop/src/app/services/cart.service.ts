@@ -64,4 +64,24 @@ export class CartService {
 
     return dataToDisplay;
   };
+
+  deleteOne = (id: string): void => {
+    if (localStorage.getItem("cart") != null) {
+      this.books = JSON.parse(localStorage.getItem("cart"));
+
+      let index = this.books.findIndex(i => i.id == id);
+
+      if (index > -1) {
+        this.books[index].quantity--;
+
+        if (this.books[index].quantity <= 0) {
+          this.books = this.books.filter(i => i.id != id);
+        }
+
+        localStorage.setItem("cart", JSON.stringify(this.books));
+      }
+    } else {
+      localStorage.setItem("cart", "");
+    }
+  };
 }

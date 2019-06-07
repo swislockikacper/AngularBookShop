@@ -16,15 +16,18 @@
   </div>
 
   <div class="elements">
-    <cart-element></cart-element>
-    <cart-element></cart-element>
-    <cart-element></cart-element>
-    <cart-element></cart-element>
-    <cart-element></cart-element>
+    <cart-element
+     
+      [cartElement]="element"></cart-element>    <cart-element
+     
+      [cartElement]="element"></cart-element>    <cart-element
+     
+      [cartElement]="element"></cart-element>
   </div>
 </section>
 
 <section class="navigation">
   <a href="">< Go back</a>
+  <a href="#" (click)="clearCart()">Clear cart</a>
   <a href="user-data">Next step</a>
 </section>

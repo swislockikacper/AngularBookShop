@@ -16,6 +16,6 @@ export class SearchComponent implements OnInit {
 
   search = (): Book => {
     this.phrase = '';
-    return new Book(2, 'ss', 'ss');
+    return new Book('sd', 'ss', 'ss','ss',12,12);
   }
 }
