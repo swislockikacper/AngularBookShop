@@ -16,13 +16,7 @@
   </div>
 
   <div class="elements">
-    <cart-element
-     
-      [cartElement]="element"></cart-element>    <cart-element
-     
-      [cartElement]="element"></cart-element>    <cart-element
-     
-      [cartElement]="element"></cart-element>
+    <cart-element *ngFor="let element of cartDisplayElements" [cartElement]="element"></cart-element>
   </div>
 </section>
 

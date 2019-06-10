@@ -4,6 +4,8 @@ import { BookService } from "src/app/services/book.service";
 import { CartElement } from "src/app/models/cart-element";
 import { Book } from "src/app/models/book";
 import { CartDisplay } from "src/app/models/cart-display";
+import { Observable } from "rxjs";
+import { async } from "q";
 
 @Component({
   selector: "cart",
@@ -12,23 +14,32 @@ import { CartDisplay } from "src/app/models/cart-display";
 })
 export class CartComponent implements OnInit {
   cartElements: CartElement[];
-  books: Book[];
+  booksObservable: Observable<Book[]>;
+  books: Book[] = [];
   cartDisplayElements: CartDisplay[];
-  element: CartDisplay = new CartDisplay('1', 'title','adasd', 'author', 12, 1);
 
   constructor(
     private cartService: CartService,
     private bookService: BookService
   ) {}
 
-  getDisplayElements = (): CartDisplay[] => {
+  getDisplayElements = (): void => {
     this.cartElements = this.cartService.getCart();
-    this.books = this.bookService.booksByIds(this.cartElements.map(b => b.id));
-
-    return this.cartService.createDataToDisplay(this.cartElements, this.books);
+    this.bookService
+      .booksByIds(this.cartElements.map(b => b.id))
+      .subscribe((res: Book[]) => {
+        this.books = res as Book[];
+        
+        this.cartDisplayElements = this.cartService.createDataToDisplay(
+          this.cartElements,
+          this.books
+        );
+      });
   };
 
   clearCart = (): void => this.cartService.clearCart();
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.getDisplayElements();
+  }
 }

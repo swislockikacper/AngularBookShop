@@ -1,3 +1,19 @@
-<section>
-  <book *ngFor="let book of getBooks(1)" [book]="book"></book>
+<section class="search">
+  <input
+    type="text"
+    name="searchText"
+    ngModel
+    [(ngModel)]="searchText"
+    #ctrl="ngModel"
+    placeholder="Type book which You want to search"
+  />
+</section>
+
+<hr />
+
+<section class="elements">
+  <book
+    *ngFor="let book of books | async | search: searchText"
+    [book]="book"
+  ></book>
 </section>

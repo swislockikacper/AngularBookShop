@@ -15,7 +15,11 @@ export class CartService {
     let bookIsInCart = false;
 
     if (localStorage.getItem("cart") != null) {
-      this.books = JSON.parse(localStorage.getItem("cart"));
+      try {
+        this.books = JSON.parse(localStorage.getItem("cart"));
+      } catch {
+        this.books = [];
+      }
 
       for (let i of this.books) {
         if (i.id == id) {
@@ -51,31 +55,25 @@ export class CartService {
         let quantity = cartElements.find(el => el.id == i.id).quantity;
 
         dataToDisplay.push(
-          new CartDisplay(
-            i.id,
-            i.title,
-            i.photo,
-            i.author,
-            i.price * quantity,
-            quantity
-          )
+          new CartDisplay(i.id, i.title, i.photo, i.author, i.price, quantity)
         );
       }
 
     return dataToDisplay;
   };
 
-  deleteOne = (id: string): void => {
+  deleteOne = (cartDisplay: CartDisplay): CartDisplay => {
     if (localStorage.getItem("cart") != null) {
       this.books = JSON.parse(localStorage.getItem("cart"));
 
-      let index = this.books.findIndex(i => i.id == id);
+      let index = this.books.findIndex(i => i.id == cartDisplay.id);
 
-      if (index > -1) {
+      if (index > -1 && this.books[index].quantity > 0) {
+        cartDisplay.quantity--;
         this.books[index].quantity--;
 
         if (this.books[index].quantity <= 0) {
-          this.books = this.books.filter(i => i.id != id);
+          this.books = this.books.filter(i => i.id != cartDisplay.id);
         }
 
         localStorage.setItem("cart", JSON.stringify(this.books));
@@ -83,5 +81,7 @@ export class CartService {
     } else {
       localStorage.setItem("cart", "");
     }
+
+    return cartDisplay;
   };
 }

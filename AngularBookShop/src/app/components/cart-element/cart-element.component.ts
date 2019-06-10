@@ -14,7 +14,11 @@ export class CartElementComponent implements OnInit {
 
   ngOnInit() {}
 
-  addOneMore = (): void => this.cartService.addToCart(this.cartElement.id);
+  addOneMore = (): void => {
+    this.cartService.addToCart(this.cartElement.id);
+    this.cartElement.quantity++;
+  };
 
-  deleteOne = (): void => this.cartService.deleteOne(this.cartElement.id);
+  deleteOne = (): CartDisplay =>
+    (this.cartElement = this.cartService.deleteOne(this.cartElement));
 }

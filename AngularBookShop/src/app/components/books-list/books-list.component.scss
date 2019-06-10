@@ -1,4 +1,4 @@
-section {
+section.elements {
   width: 60%;
   margin: 0 auto;
   padding: 1rem;
@@ -6,4 +6,17 @@ section {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+}
+
+section.search {
+  margin-top: 2rem;
+  text-align: center;
+
+  input[type="text"] {
+    width: 15rem;
+    padding: 0.2rem;
+    height: 1.5rem;
+    border-color: #000;
+    border-width: 0.05rem;
+  }
 }
